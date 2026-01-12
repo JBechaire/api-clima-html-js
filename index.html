@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clima Agora</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Clima Agora</h1>
+    <p>Consulte o clima por cidade ou pela sua localização.</p>
+  </header>
+
+  <main class="container">
+    <section class="search-card">
+      <form id="cityForm" class="form">
+        <label for="cityInput">Cidade</label>
+        <input
+          id="cityInput"
+          name="city"
+          type="text"
+          placeholder="Ex.: Porto Alegre"
+          required
+        />
+        <button type="submit">Buscar</button>
+      </form>
+
+      <button id="geoBtn" class="secondary">Usar minha localização</button>
+    </section>
+
+    <section id="result" class="result-card" aria-live="polite">
+      <!-- Resultado renderizado aqui -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Dados por Open‑Meteo • Unidade: °C • Idioma: pt-BR</small>
+  </footer>
+
+  <!-- Scripts (ordem importa) -->
+  <script src="assets/js/services/config.js"></script>
+  <script src="assets/js/services/geoService.js"></script>
+  <script src="assets/js/services/weatherService.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
