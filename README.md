@@ -1,6 +1,7 @@
 
 # 🌤️ Clima Agora — HTML + JavaScript (Open‑Meteo)
 
+
 <p align="center">
   <img src="assets/images/imagem-api-clima.gif" alt="Imagem de fundo — Clima Agora" width="720" />
 </p>
