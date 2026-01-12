@@ -10,7 +10,10 @@
     e.preventDefault();
 
     const query = input.value.trim();
-    if (!query) return;
+    if (!query) {
+      UI.showError(new Error("Informe uma cidade válida."));
+      return;
+    }
 
     // Cancela requisição anterior (se houver)
     if (currentController) currentController.abort();

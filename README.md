@@ -48,6 +48,45 @@ python -m http.server 5500
 npx http-server .
 
 #Acesse: http://localhost:5500
+```
+
+## 🧪 Testes (Jest + MSW)
+Instale as dependências de teste e execute o Jest:
+
+```bash
+npm init -y
+npm install -D jest msw whatwg-fetch @testing-library/dom @testing-library/user-event
+# Opcional: adicionar script no package.json
+# "scripts": { "test": "jest --watchAll=false" }
+
+# Rodar testes
+npx jest
+```
+
+Os testes de exemplo ficam em `tests/` (unitários e de integração), e usam MSW para mockar as APIs externas.
+
+---
+
+## ✅ Testes E2E com Cypress
+Adicionei um conjunto de testes E2E usando **Cypress** que cobrem os seguintes cenários:
+
+- Busca por uma **cidade válida** e exibição dos dados meteorológicos.
+- Busca por uma **cidade inexistente** e mensagem de erro.
+- **Entrada vazia** que exibe uma mensagem de erro informando para preencher a cidade.
+- **Falha da API** (status 500) sendo exibida como mensagem de erro.
+
+Como rodar os testes E2E:
+
+```bash
+# Instale dependências (se ainda não instalou)
+npm install
+
+# Rodar todos os testes E2E em modo headless
+npm run e2e
+```
+
+O arquivo de testes está em `cypress/e2e/weather.cy.js`. Os testes usam `cy.intercept` para mockar as respostas das APIs externas (`/v1/search` e `/v1/forecast`).
+
 
 ## 🌐 APIs utilizadas
 

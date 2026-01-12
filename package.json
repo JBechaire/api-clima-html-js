@@ -1,0 +1,24 @@
+{
+  "name": "api-clima-html",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   <img src=\"assets/images/imagem-api-clima.gif\" alt=\"Imagem de fundo — Clima Agora\" width=\"720\" />\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "e2e": "cypress run --headless"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JBechaire/api-clima-html-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JBechaire/api-clima-html-js/issues"
+  },
+  "homepage": "https://github.com/JBechaire/api-clima-html-js#readme",
+  "devDependencies": {
+    "cypress": "^15.8.2"
+  }
+}
