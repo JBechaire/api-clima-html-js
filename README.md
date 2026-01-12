@@ -1,6 +1,10 @@
 
 # 🌤️ Clima Agora — HTML + JavaScript (Open‑Meteo)
 
+<p align="center">
+  <img src="assets/images/imagem-api-clima.gif" alt="Imagem de fundo — Clima Agora" width="720" />
+</p>
+
 Aplicação front-end que consulta o **clima atual** por **cidade** ou pela **sua localização**, usando a API pública **Open‑Meteo** (sem necessidade de chave).  
 ✅ **Deploy:** [https://jbechaire.github.io/api-clima-html-js/](https://jbechaire.github.io/api-clima-html-js/)
 
